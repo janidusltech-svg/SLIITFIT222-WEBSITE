@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliit Fitness 222 - Classes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#ff5722', dark: '#0f172a', darker: '#020617', },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: white;
+        }
+
+        .page-header {
+            background-image: linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.9)), url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glossy-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .class-img {
+            transition: transform 0.5s ease;
+        }
+
+        .group:hover .class-img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 glossy-card border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-3xl font-extrabold text-white tracking-widest uppercase">
+                        Sliit<span class="text-primary">Fit</span><span class="text-2xl ml-1">222</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-white hover:text-primary px-3 py-2 rounded-md transition">Home</a>
+                        <a href="classes.html"
+                            class="text-primary font-semibold px-3 py-2 rounded-md transition">Classes</a>
+                        <a href="members.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium transition">Members
+                            Portal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header pt-32 pb-20 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-extrabold mb-4">Our <span class="text-primary">Classes</span></h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">Discover a variety of classes tailored to your fitness
+                level. From high-intensity cardio to relaxing yoga.</p>
+        </div>
+    </div>
+
+    <div class="py-20 bg-darker">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="glossy-card rounded-2xl overflow-hidden group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1470&auto=format&fit=crop"
+                            class="w-full h-full object-cover class-img">
+                        <div
+                            class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+                            High Intensity</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Cardio Blast</h3>
+                        <p class="text-gray-400 mb-4">Get your heart pumping with our intense cardio workout.</p>
+                        <div class="flex text-sm text-gray-500">
+                            <i class="fa-regular fa-clock mr-2 text-primary"></i> 45 Mins
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glossy-card rounded-2xl overflow-hidden group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1470&auto=format&fit=crop"
+                            class="w-full h-full object-cover class-img">
+                        <div
+                            class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+                            Strength</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Power Lifting</h3>
+                        <p class="text-gray-400 mb-4">Build muscle and strength guided by experts.</p>
+                        <div class="flex text-sm text-gray-500">
+                            <i class="fa-regular fa-clock mr-2 text-primary"></i> 60 Mins
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glossy-card rounded-2xl overflow-hidden group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1470&auto=format&fit=crop"
+                            class="w-full h-full object-cover class-img">
+                        <div
+                            class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+                            1-on-1</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Personal Training</h3>
+                        <p class="text-gray-400 mb-4">Get personalized plans and individual attention.</p>
+                        <div class="flex text-sm text-gray-500">
+                            <i class="fa-regular fa-clock mr-2 text-primary"></i> Flexible
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
